@@ -1,0 +1,400 @@
+body{
+    display:flex;
+    flex-direction: column;
+    font-family:"Montserrat", "Open Sans";
+    color: #2e5156;
+    background-color: #7ab3b8;    
+}
+
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;     
+}
+
+
+header h1{
+    padding: 20px 70px 10px 10px;
+    
+}
+
+
+main{
+    margin-bottom: 350px;
+}
+
+
+footer{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.main-menu nav{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+ .main-menu ul{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type:none;
+    margin-left:0px;
+    padding-left: 0px;
+    border-radius: 4px;
+    width: 1000px;
+    background: linear-gradient(to left, rgba(56, 156, 156, 0.5) 80%, rgba(0,0,0,0));;
+}
+
+
+.main-menu li:nth-child(4) {
+    margin-right: 20px;
+}
+
+
+.main-menu a{
+    display: block;
+    text-decoration: none;
+    color: #2e5156;
+    padding:10px;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+
+.main-menu a:hover{
+    transition: all .2s ease;
+    opacity: 1;
+    border-radius: 10px;
+    background-color: rgba(56, 156, 156, 0.25);
+}
+
+
+.main-menu a:visited{
+    color:#d0b89b;
+    font-weight: bold;
+}
+
+
+
+/*home page*/
+.home{
+    background-image: url(../pictures/img08.JPG);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+
+.home h1{
+    display: flex;
+    flex-direction: column;
+    font-size:50px;
+    transition: all 1s ease-in-out;
+    background: linear-gradient(to bottom, rgba(208, 184, 155, 0.2) 80%, rgba(0,0,0,0));
+    
+}
+
+.home head{
+    position: relative;
+}
+
+
+.home h1:hover{
+    width:1000px;
+    /* margin-top: 80px; */
+    color: #e0e7f8;
+    transition: all 1s ease-in-out;
+    background: linear-gradient(to bottom, rgba(46, 81, 86, 0.5) 80%, rgba(0,0,0,0));
+    
+}
+
+
+.drop-item{
+  display:block;  
+  position: absolute;
+  color: #e0e7f8;
+  transition: top 1s ease-in-out;
+  background: linear-gradient(to top, rgba(46, 81, 86, 0.5) 80%, rgba(0,0,0,0));
+  z-index: 1;
+  width: 1085px;
+  /* The same as below */
+  opacity: 0;
+  margin-top: 0px;
+  transition: all 1s ease-in-out;
+   
+}
+
+/* .drop-item:not(.visible) {
+    opacity: 0;
+    margin-top: 0px;
+    transition: all 1s ease-in-out;
+} */
+
+.drop-item.visible {
+    opacity: 1;
+    margin-top: 30px;
+    transition: all 1s ease-in-out;
+}
+
+.home aside p:first-child{
+    font-weight: bold;
+}
+
+
+
+
+/*resume page*/
+.resume-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.resume-main span{
+    font-weight: bold;
+}
+
+
+.resume-main ul{
+    list-style-type:circle;
+}
+
+
+.left-column{
+    padding-right: 50px;
+    margin-right: 50px;
+}
+
+aside ul li{
+    margin: 20px;
+}
+
+
+ .right-column{
+    padding-left: 50px;
+    margin-left: 50px;
+ }  
+ 
+
+.icon{
+    font-size: 2em;
+    padding: 10px 10px 0px 10px;
+}
+
+
+
+/*portfolio page*/
+.carousel{
+    position:relative;/*All children elements with 'position:absolute' will calculate their position relative to this container*/
+    width:600px; 
+    height:450px; 
+    margin:auto; 
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px #2e5156;
+    border-style: groove;
+}
+
+
+
+.buttons{
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    z-index: 2;
+    width:600px; 
+    height:450px;
+    line-height: 450px;/*Centres the buttons vertically using the height of the line box*/
+}
+
+
+.buttons a{
+    color: #e0e7f8;
+    font-size: 45px;
+    padding: 0px 10px;
+    transition: all .2s ease-in-out .5s;
+    opacity: 0;
+    background-color: rgba(46, 81, 86, 0);
+}
+
+
+.buttons:hover a{
+    transition: all .2s ease-in-out .5s;
+    opacity: 1;
+    background-color: rgba(46, 81, 86, 0.25);
+}
+
+
+.carousel-images{
+    position:absolute;
+    left:0;
+    z-index: 1; /*Bottom of the carousel stack*/
+    width: 7200px;
+    height: 450px;
+    transition:left .2s ease-in-out;
+}
+
+
+.carousel-images img{
+    /*Set the image size*/
+    width:600px; 
+    height:450px;
+}
+
+
+.carousel-captions{
+    color: #e0e7f8;
+    background-color: rgba(46, 81, 86, 0.25);
+    position:absolute;
+    z-index: 3;
+    text-align: center;
+    bottom:0;
+    width:100%;
+    height:50px;
+    line-height:50px;
+}
+
+
+
+main.portfolio {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gallery{
+    display: grid;
+    place-content: center; /*combination of align-content and justify-content*/
+    margin-right:50px;
+    padding:50px 50px 50px 50px;
+    border-radius: 10px;
+    background-color: #d0b89b;
+    height:450px;
+    width:450px;
+}
+
+
+.gallery-images{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    position:relative;
+}
+
+
+.gallery-images p{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: #e0e7f8;
+    z-index: 2;
+    border-radius: 5px;
+    background: linear-gradient(to top, rgba(56, 156, 156, 0.5) 50%, rgba(0,0,0,0));
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+    bottom: 0;
+    width: 150px;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+.gallery-images img{
+    border-radius: 5px;
+    width:150px;
+    height:150px;
+}
+
+
+.gallery-image-container{
+    position: relative;
+}
+
+
+.gallery-captions{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+     z-index: 2;   
+}
+
+
+
+/*contact page*/
+header.contact-header{
+    display:flex;
+    flex-direction: column;
+}
+
+
+div.contact-message{
+    padding: 0px 0px 10px 10px;
+    margin-bottom: 50px;
+    
+}
+
+
+form{
+    display:flex;
+    flex-direction: column;
+    padding-left: 10px;
+    width:900px;
+    height: 300px;
+}
+
+
+input{
+    height: 30px;
+    font-size: 15pt;
+    margin: 10px 0px;
+}
+
+
+textarea{
+    font-size:13pt;
+    margin-top: 10px;
+}
+
+
+input, textarea{
+    border-radius: 10px;
+    background-color: #d0b89b;
+    color: #2e5156;
+    border-style: dotted;
+}
+
+
+button{
+    text-align: center;
+    color:#e0e7f8;
+    background-color: #2e5156;
+    border-style:dotted;  
+    width:80px;
+    border-radius: 5px;
+}
+
+
+button:active{
+    color:#2e5156;
+    background-color: #e0e7f8;
+}
+
+
+.contact-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.contact-details span{
+    font-weight: bold;
+}

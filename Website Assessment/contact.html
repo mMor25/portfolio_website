@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architectural_Portfolio/Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    
+</head>
+<body>
+    <header>
+       
+        <h1>Want to work together?</h1>
+        
+        
+        <nav id= "contactMainMenu" class="main-menu">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact-message">You can contact me with a message...</div>
+    <main class="contact-main">
+        <form method="get" id="contactMe" class="contact-me">
+            <label for="userName">Name</label>
+            <input type="text" name="name" id="userName" required>   
+            
+               
+            <label for="userEmail">Email</label>
+            <input type="email" name="email" id="userEmail" required> 
+
+
+            <label for="userRequest">Message</label>
+            <textarea id="userRequest" name="request" rows="5" cols="35" 
+            placeholder="Hello..." maxlength="1000" required></textarea>
+            <button type="submit" id="submitButton" class="submit-button">
+                <span>Submit</span>
+            </button>
+        </form>
+        <aside class="contact-details">
+            <p><span>My contact details:</span><br>
+            <br>
+            <span>Address:</span><br>
+            Villa<br>
+            Kingstown<br>
+            PO Box 1426<br>
+            Saint Vincent and the Grenadines<br>
+            <br>
+            <span>Telephone number:</span><br>
+            1(784) 529 6675<br>
+            <br>
+            <span>Email address:</span><br>
+            <a href="mailto:theislandarchitect@gmail.com">theislandarchitect@gmail.com</a>
+            </p>
+
+        </aside>
+    </main>
+    <footer>
+        &copy;Meryl DeBique 2025
+    </footer>
+</body>
+</html>

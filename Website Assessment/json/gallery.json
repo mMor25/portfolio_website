@@ -1,0 +1,56 @@
+[ 
+    {
+        "url":"pictures/img01.JPG",
+        "caption":"Canouan Housing Development",
+        "description":"Blue three-story apartment in foreground, green three-story apartment in background. Both enclosed by fences."
+    },
+
+    {
+        "url":"pictures/img02.JPG",
+        "caption":"Coral Reef Preschool",
+        "description":"Single-story, pale pink building with green trim behind a small sign declaring the building's name."
+    },
+
+    {
+        "url":"pictures/img03.JPG",
+        "caption":"Preschool and Primary school",
+        "description":"Mostly obsured, the pink building sits in the foreground behind a white picket fence. A lilac multi-part, one-story building is in the background near an open field."
+    },
+
+    {
+        "url":"pictures/img04.JPG",
+        "caption":"Coral Reef Preschool Semi-Interior",
+        "description":"Three white doors open to a veranda with green beams and a pink wall. There is a bright red picnic bench before of the wall."
+    },
+
+    {
+        "url":"pictures/img05.JPG",
+        "caption":"Coral Reef Preschool Interior",
+        "description":"White room with five doors opening onto the verand allowing light in. Colourful pre-school furniture arranged neatly. Ceiling is high with white beams."
+    },
+
+    {
+        "url":"pictures/img06.JPG",
+        "caption":"Canouan Primary School",
+        "description":"Lilac, three-part, one-story building at the top and to the right of an open field. Pink building further away to the left and a green mountain behind the buildings."
+    },
+
+    {
+        "url":"pictures/img07.JPG",
+        "caption":"Villa Ferrari",
+        "description":"Cluster of white buildings surrounded by a forest and overlooking the sea."
+    },
+
+    {
+        "url":"pictures/img08.JPG",
+        "caption":"Villa Ferrari Gate",
+        "description":"White wall with a dark brown wooden door Hanging square lamps on either side of the door. A palm branch hangs in the foreground."
+    },
+
+    {
+        "url":"pictures/img09.JPG",
+        "caption":"Villa Ferrari Semi-Interior",
+        "description":"Dark brown wooden awning canopy leads from the foreground to the pool. "
+    }
+    
+]
